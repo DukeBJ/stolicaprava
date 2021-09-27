@@ -6,6 +6,8 @@ mix.setPublicPath('dist');
 
 mix.copy('src/index.html', 'dist/index.html');
 
+mix.copy('src/img/*', 'dist/img');
+
 mix.js('src/js/app.js', 'dist/js').sourceMaps(true, 'source-map');
 mix.sass('src/scss/app.scss','dist/css').sourceMaps(true, 'source-map');
 

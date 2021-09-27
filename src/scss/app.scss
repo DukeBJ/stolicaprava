@@ -1,10 +1,36 @@
 // import custom variables here
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700&display=swap');
 
 // default variables
-@import "uikit/src/scss/variables-theme.scss";
+@import "variables-theme";
 @import "uikit/src/scss/mixins-theme.scss";
 
-//import mixins here
+// 3. Your custom mixin overwrites.
+@mixin hook-base-body(){
+  font-family: 'Montserrat', sans-serif!important;
+  color: #524E69;
+}
+@mixin hook-button(){
+  color: #fff;
+  background-color: $global-primary-background;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 3;
+  transition: all .3s ease-in-out;
+}
+@mixin hook-button-hover(){
+  color: #fff;
+  background-color: lighten($global-primary-background, 20%);
+}
+@mixin hook-card-default(){
+  border-radius: 10px;
+  box-shadow: $card-default-box-shadow;
+}
 
 // uikit theme
 @import "uikit/src/scss/uikit-theme.scss";
+
+// My
+
+@import 'sp/main'

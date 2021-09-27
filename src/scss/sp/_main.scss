@@ -1,0 +1,59 @@
+.sp-header {
+  background-color: $global-muted-background;
+}
+
+.descriotion {
+  font-size: 0.875rem;
+}
+
+.card-header {
+  font-weight: 800;
+}
+
+.sp-banner {
+  background-color: $global-muted-background;
+  padding: 50px 0;
+
+  .sp-banner--header {
+    font-weight: 700;
+    color: $global-emphasis-color;
+    line-height: 120%;
+  }
+  .sp-banner--description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 50px;
+  }
+}
+
+.sp-benefits {
+  .uk-card {
+    border-radius: 10px;
+  }
+  .card-header {
+    margin-top: 10px;
+  }
+}
+
+.uk-slidenav {
+  svg {
+    polyline {
+      stroke: $global-primary-background!important;
+    }
+  }
+}
+
+// .sp-services {
+  
+//   // div:not(.sp-services-title) {
+//   //   >p {
+      
+//   //   }
+//   // }
+// }
+
+// .sp-work-process {
+//   background-color: $global-muted-background;
+// }
