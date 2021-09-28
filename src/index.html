@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="/css/app.css" />
   <title>Юридический цент «Столица»</title>
 </head>
@@ -19,11 +26,10 @@
             <nav class="uk-navbar-container" uk-navbar>
               <div class="uk-navbar-right nav-overlay">
                 <ul class="uk-navbar-nav">
-                  <li><a href="#">nav 1</a></li>
-                  <li><a href="#">nav 2</a></li>
-                  <li><a href="#">nav 3</a></li>
-                  <li><a href="#">nav 4</a></li>
-                  <li><a href="#">nav 5</a></li>
+                  <li><a href="/service/service.html">Услуги</a></li>
+                  <li><a href="/dokumenty/">Документы</a></li>
+                  <li><a href="/articles/">Статьи</a></li>
+                  <li><a href="/contact/">Контакты</a></li>
                 </ul>
               </div>
 
@@ -58,19 +64,21 @@
     </header>
 
     <main>
-
+      <!--TODO: сделать правильное расположение блоков на мобильном xs < 640 -->
+      <!--TODO: сделать мобильное меню -->
+      <!--TODO: сделать может чуть-чуть анимации -->
       <section class="sp-banner">
         <div class="uk-container">
-          <div class="uk-grid uk-flex uk-flex-middle">
-            <div class="uk-width-1-2 sp-left">
+          <div class="uk-grid uk-text-center@s uk-text-left@m uk-flex uk-flex-middle uk-child-width-1-2@m uk-child-width-1@s" uk-grid>
+            <div class="sp-left uk-flex-first@m">
               <h1 class="sp-banner--header">
                 Профессиональная оконная помощь
               </h1>
               <div class="sp-banner--description">Компания «Пластика Оконн» — защищаем ваши окна уже 10 лет</div>
               <a href="#" class="uk-button">Бесплатная консультация</a>
             </div>
-            <div class="uk-width-1-2 sp-right">
-              <img src="./img/12.jpg" alt="">
+            <div class="sp-right uk-flex-first@s">
+              <img src="./img/law.png" alt="">
             </div>
           </div>
         </div>
