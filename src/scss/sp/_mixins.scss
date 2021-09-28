@@ -1,0 +1,21 @@
+@mixin hook-base-body(){
+  font-family: 'Montserrat', sans-serif!important;
+  color: #524E69;
+}
+@mixin hook-button(){
+  color: #fff;
+  background-color: $global-primary-background;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 3;
+  transition: all .3s ease-in-out;
+}
+@mixin hook-button-hover(){
+  color: #fff;
+  background-color: lighten($global-primary-background, 20%);
+}
+@mixin hook-card-default(){
+  border-radius: 10px;
+  box-shadow: $card-default-box-shadow;
+}

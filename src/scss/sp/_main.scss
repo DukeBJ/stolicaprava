@@ -22,7 +22,7 @@
   .sp-banner--description {
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 140%;
     margin-bottom: 50px;
   }
@@ -37,13 +37,117 @@
   }
 }
 
-.uk-slidenav {
-  svg {
-    polyline {
-      stroke: $global-primary-background!important;
+// .uk-slidenav {
+//   svg {
+//     polyline {
+//       stroke: $global-primary-background!important;
+//     }
+//   }
+// }
+
+.sp-slider-article {
+  .uk-card-body {
+    padding-left: 0!important;
+    padding-right: 0!important;
+    color: $global-color;
+
+    .sp-slider-article--header {
+      font-size: 1rem;
+      color: $global-emphasis-color;
+    }
+
+    p {
+      margin-top: 6px;
+      font-size: 0.875rem;
+    }
+  }
+
+  .uk-card-media-top {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+  
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
     }
   }
 }
+
+
+.sp-contacts {
+  .sp-map {
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    min-height: 580px;
+  }
+
+  &-card {
+    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    z-index: 100;
+    background-color: #ffffff;
+    max-width: 400px;
+
+    &-title {
+      font-size: 0.75rem;
+      // color: $global-color;
+    }
+
+    &-text {
+      color: $global-emphasis-color;
+
+      a {
+        color: $global-emphasis-color;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-medium-max) {
+  .sp-contacts {
+      &-card {
+        box-shadow: none;
+        padding: 20px;
+        border-radius: none;
+        position: static;
+        max-width: none;
+        width: auto;
+        background-color: #ffffff;
+    }
+  }
+}
+
+footer {
+  background-color: $footer-background;
+  color: $global-emphasis-color;
+
+  .footer-header {
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    a {
+      color: $global-emphasis-color;
+    }
+  }
+
+  .footer-link {
+
+
+    a {
+      color: $global-emphasis-color;
+    }
+  }
+}
+
 
 // .sp-services {
   
