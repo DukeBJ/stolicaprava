@@ -19,3 +19,7 @@
   border-radius: 10px;
   box-shadow: $card-default-box-shadow;
 }
+@mixin hook-offcanvas-overlay(){
+  background: rgba($global-emphasis-color, .5);
+  backdrop-filter: blur(4px);
+}
