@@ -46,7 +46,7 @@ defined('_JEXEC') or die;?>
       <div class="uk-container">
         <div class="uk-flex uk-flex-middle uk-visible@m sp-header-desktop">
           <div class="uk-width-auto sp-top-logo">
-            <img src="./img/logo.svg" alt="">
+            <img src="/img/logo.svg" alt="">
           </div>
           <div class="uk-width-expand sp-top-nav">
             <nav class="uk-navbar-container" uk-navbar>
@@ -87,7 +87,7 @@ defined('_JEXEC') or die;?>
 
         <div class="uk-flex uk-flex-middle uk-hidden@m sp-header-mobile">
           <div class="uk-width-auto sp-top-logo">
-            <img src="./img/logo_small.svg" alt="">
+            <img src="/img/logo_small.svg" alt="">
           </div>
           <div class="uk-width-expand sp-top-contact">
             <nobr><a href="#">8 (495) 510‑70‑16</a></nobr>
@@ -105,7 +105,7 @@ defined('_JEXEC') or die;?>
 
           <div class="uk-flex uk-margin uk-flex-between">
             <div class="uk-width-auto sp-top-logo">
-              <img src="./img/logo.svg" alt="">
+              <img src="/img/logo.svg" alt="">
             </div>
             <div class="uk-width-auto">
               <button class="uk-offcanvas-close" type="button" uk-close></button>
@@ -161,7 +161,7 @@ defined('_JEXEC') or die;?>
               <a href="#" class="uk-button">Бесплатная консультация</a>
             </div>
             <div class="sp-right uk-flex-first">
-              <img src="./img/law.png" alt="">
+              <img src="/img/law.png" alt="">
             </div>
           </div>
         </div>
@@ -181,7 +181,7 @@ defined('_JEXEC') or die;?>
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="./img/icon-group.svg#home"></use>
+                      <use xlink:href="/img/icon-group.svg#home"></use>
                     </svg>
                   </div>
                   <div>
@@ -197,7 +197,7 @@ defined('_JEXEC') or die;?>
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="./img/icon-group.svg#heart"></use>
+                      <use xlink:href="/img/icon-group.svg#heart"></use>
                     </svg>
                   </div>
                   <div>
@@ -213,7 +213,7 @@ defined('_JEXEC') or die;?>
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="./img/icon-group.svg#trust"></use>
+                      <use xlink:href="/img/icon-group.svg#trust"></use>
                     </svg>
                   </div>
                   <div>
@@ -229,7 +229,7 @@ defined('_JEXEC') or die;?>
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="./img/icon-group.svg#contract"></use>
+                      <use xlink:href="/img/icon-group.svg#contract"></use>
                     </svg>
                   </div>
                   <div>
@@ -245,7 +245,7 @@ defined('_JEXEC') or die;?>
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="./img/icon-group.svg#family"></use>
+                      <use xlink:href="/img/icon-group.svg#family"></use>
                     </svg>
                   </div>
                   <div>
@@ -261,7 +261,7 @@ defined('_JEXEC') or die;?>
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="./img/icon-group.svg#wheight"></use>
+                      <use xlink:href="/img/icon-group.svg#wheight"></use>
                     </svg>
                   </div>
                   <div>
@@ -277,7 +277,7 @@ defined('_JEXEC') or die;?>
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="./img/icon-group.svg#car"></use>
+                      <use xlink:href="/img/icon-group.svg#car"></use>
                     </svg>
                   </div>
                   <div>
@@ -293,7 +293,7 @@ defined('_JEXEC') or die;?>
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="./img/icon-group.svg#oldman"></use>
+                      <use xlink:href="/img/icon-group.svg#oldman"></use>
                     </svg>
                   </div>
                   <div>
@@ -309,7 +309,7 @@ defined('_JEXEC') or die;?>
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="./img/icon-group.svg#document"></use>
+                      <use xlink:href="/img/icon-group.svg#document"></use>
                     </svg>
                   </div>
                   <div>
@@ -335,7 +335,7 @@ defined('_JEXEC') or die;?>
               <div class="uk-card-media-top">
                 <div class="sp-work-process-icon">
                   <svg class="icon">
-                    <use xlink:href="./img/icon-group.svg#chat"></use>
+                    <use xlink:href="/img/icon-group.svg#chat"></use>
                   </svg>
                 </div>
               </div>
@@ -350,7 +350,7 @@ defined('_JEXEC') or die;?>
               <div class="uk-card-media-top">
                 <div class="sp-work-process-icon">
                   <svg class="icon">
-                    <use xlink:href="./img/icon-group.svg#docsearch"></use>
+                    <use xlink:href="/img/icon-group.svg#docsearch"></use>
                   </svg>
                 </div>
               </div>
@@ -364,7 +364,7 @@ defined('_JEXEC') or die;?>
             <div class="uk-card uk-card-small uk-text-center">
               <div class="sp-work-process-icon">
                 <svg class="icon">
-                  <use xlink:href="./img/icon-group.svg#docok"></use>
+                  <use xlink:href="/img/icon-group.svg#docok"></use>
                 </svg>
               </div>
               <div class="uk-card-body">
@@ -377,7 +377,7 @@ defined('_JEXEC') or die;?>
             <div class="uk-card uk-card-small uk-text-center">
               <div class="sp-work-process-icon">
                 <svg class="icon">
-                  <use xlink:href="./img/icon-group.svg#docsud"></use>
+                  <use xlink:href="/img/icon-group.svg#docsud"></use>
                 </svg>
               </div>
               <div class="uk-card-body">
@@ -406,7 +406,7 @@ defined('_JEXEC') or die;?>
             <div class="sp-benefits-first">
               <div class="uk-card uk-background-muted">
                 <div class="uk-card-body">
-                  <img src="./img/dots.svg" alt="">
+                  <img src="/img/dots.svg" alt="">
                   <h3 class="card-header">Порядочность</h3>
                   <div class="description">
                     Мы&nbsp;никогда не&nbsp;беремся за&nbsp;заведомо проигрышные дела, т.к. дорожим своей репутацией. Большинство наших клиентов&nbsp;&mdash; это люди, которым нас порекомендовали наши клиенты.
@@ -417,7 +417,7 @@ defined('_JEXEC') or die;?>
             <div class="sp-benefits-second">
               <div class="uk-card uk-background-muted">
                 <div class="uk-card-body">
-                  <img src="./img/dots.svg" alt="">
+                  <img src="/img/dots.svg" alt="">
                   <h3 class="card-header">Высокая квалификация</h3>
                   <div class="description">
                     Специалисты имеют высокую квалификацию и&nbsp;большой практический опыт его применения. В&nbsp;ЮрЦентре работают юристы, имеющие стаж работы свыше 10&nbsp;лет.
@@ -428,7 +428,7 @@ defined('_JEXEC') or die;?>
             <div class="sp-benefits-third">
               <div class="uk-card uk-background-muted">
                 <div class="uk-card-body">
-                  <img src="./img/dots.svg" alt="">
+                  <img src="/img/dots.svg" alt="">
                   <h3 class="card-header">Расположение</h3>
                   <div class="description">
                     Наш юридический центр расположен рядом со&nbsp;станцией метро Щёлковская в&nbsp;3&nbsp;минутах ходьбы, где вы&nbsp;в&nbsp;спокойной обстановке сможете получить исчерпывающий ответ юриста на&nbsp;ваш вопрос.
@@ -439,7 +439,7 @@ defined('_JEXEC') or die;?>
             <div class="sp-benefits-fourth">
               <div class="uk-card uk-background-muted">
                 <div class="uk-card-body">
-                  <img src="./img/dots.svg" alt="">
+                  <img src="/img/dots.svg" alt="">
                   <h3 class="card-header">Ценовая политика</h3>
                   <div class="description">
                     У&nbsp;нас конкурнтные цены. Мы&nbsp;всегда детально расписываем за&nbsp;что платит клиент и&nbsp;стараемся заставить платить вашего апанента в&nbsp;суде за&nbsp;услуги адвоката.
@@ -465,7 +465,7 @@ defined('_JEXEC') or die;?>
                   <li>
                     <div class="uk-card uk-card-small">
                       <div class="uk-card-media-top">
-                        <img src="./img/test.png" alt="">
+                        <img src="/img/test.png" alt="">
                       </div>
                       <div class="uk-card-body">
                         <div class="sp-slider-article--header">Заголовок</div>
@@ -476,7 +476,7 @@ defined('_JEXEC') or die;?>
                   <li>
                     <div class="uk-card uk-card-small">
                       <div class="uk-card-media-top">
-                        <img src="./img/test.png" alt="">
+                        <img src="/img/test.png" alt="">
                       </div>
                       <div class="uk-card-body">
                         <div class="sp-slider-article--header">Заголовок</div>
@@ -487,7 +487,7 @@ defined('_JEXEC') or die;?>
                   <li>
                     <div class="uk-card uk-card-small">
                       <div class="uk-card-media-top">
-                        <img src="./img/test.png" alt="">
+                        <img src="/img/test.png" alt="">
                       </div>
                       <div class="uk-card-body">
                         <div class="sp-slider-article--header">Заголовок</div>
@@ -498,7 +498,7 @@ defined('_JEXEC') or die;?>
                   <li>
                     <div class="uk-card uk-card-small">
                       <div class="uk-card-media-top">
-                        <img src="./img/test.png" alt="">
+                        <img src="/img/test.png" alt="">
                       </div>
                       <div class="uk-card-body">
                         <div class="sp-slider-article--header">Заголовок</div>
@@ -509,7 +509,7 @@ defined('_JEXEC') or die;?>
                   <li>
                     <div class="uk-card uk-card-small">
                       <div class="uk-card-media-top">
-                        <img src="./img/test.png" alt="">
+                        <img src="/img/test.png" alt="">
                       </div>
                       <div class="uk-card-body">
                         <div class="sp-slider-article--header">Заголовок</div>
@@ -520,7 +520,7 @@ defined('_JEXEC') or die;?>
                   <li>
                     <div class="uk-card uk-card-small">
                       <div class="uk-card-media-top">
-                        <img src="./img/test.png" alt="">
+                        <img src="/img/test.png" alt="">
                       </div>
                       <div class="uk-card-body">
                         <div class="sp-slider-article--header">Заголовок</div>
@@ -531,7 +531,7 @@ defined('_JEXEC') or die;?>
                   <li>
                     <div class="uk-card uk-card-small">
                       <div class="uk-card-media-top">
-                        <img src="./img/test.png" alt="">
+                        <img src="/img/test.png" alt="">
                       </div>
                       <div class="uk-card-body">
                         <div class="sp-slider-article--header">Заголовок</div>
@@ -542,7 +542,7 @@ defined('_JEXEC') or die;?>
                   <li>
                     <div class="uk-card uk-card-small">
                       <div class="uk-card-media-top">
-                        <img src="./img/test.png" alt="">
+                        <img src="/img/test.png" alt="">
                       </div>
                       <div class="uk-card-body">
                         <div class="sp-slider-article--header">Заголовок</div>
@@ -553,7 +553,7 @@ defined('_JEXEC') or die;?>
                   <li>
                     <div class="uk-card uk-card-small">
                       <div class="uk-card-media-top">
-                        <img src="./img/test.png" alt="">
+                        <img src="/img/test.png" alt="">
                       </div>
                       <div class="uk-card-body">
                         <div class="sp-slider-article--header">Заголовок</div>
@@ -564,7 +564,7 @@ defined('_JEXEC') or die;?>
                   <li>
                     <div class="uk-card uk-card-small">
                       <div class="uk-card-media-top">
-                        <img src="./img/test.png" alt="">
+                        <img src="/img/test.png" alt="">
                       </div>
                       <div class="uk-card-body">
                         <div class="sp-slider-article--header">Заголовок</div>

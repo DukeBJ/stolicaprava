@@ -4,8 +4,18 @@ import Icons from 'uikit/dist/js/uikit-icons';
 UIkit.use(Icons);
 
 document.addEventListener('DOMContentLoaded', function() {
+
   const el = document.querySelector('.sp-top-time');
   el.innerText = workTime();
+
+  const offcnvs = document.querySelector('#offcanvas-overlay');
+  const menuOpen = document.querySelector('#menu-open');
+
+  UIkit.offcanvas(offcnvs);
+
+  menuOpen.addEventListener('click', function() {
+    UIkit.offcanvas(offcnvs).show();
+  })
 })
 
 const workTime = () => {
