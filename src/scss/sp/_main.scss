@@ -57,6 +57,13 @@
 }
 
 .uk-offcanvas-bar {
+
+  .uk-button {
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
   .sp-top-logo {
     img {
       height: 40px;
@@ -83,17 +90,45 @@
   background-color: $global-muted-background;
   padding: 50px 0;
 
-  .sp-banner--header {
+  &--header {
     font-weight: 700;
     color: $global-emphasis-color;
     line-height: 120%;
   }
-  .sp-banner--description {
+  &--description {
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
     line-height: 140%;
     margin-bottom: 50px;
+  }
+
+  .uk-grid {
+    position: relative;
+  }
+
+  .sp-breadcrumbs {
+    position: absolute;
+    left: 0;
+    top: -40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $breakpoint-medium-max) {
+  .sp-banner {
+
+    .sp-breadcrumbs {
+      text-align: left;
+    }
+
+    .sp-right {
+
+      img {
+
+        height: 40vh;
+      }
+    }
   }
 }
 

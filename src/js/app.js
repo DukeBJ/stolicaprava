@@ -3,6 +3,23 @@ import Icons from 'uikit/dist/js/uikit-icons';
 
 UIkit.use(Icons);
 
+document.addEventListener('DOMContentLoaded', function() {
+  const el = document.querySelector('.sp-top-time');
+  el.innerText = workTime();
+})
+
+const workTime = () => {
+  const thisday = new Date();
+
+  if (thisday.getDay() > 0 && thisday.getDay() <= 5) {
+    return 'с 10:00 до 19:00';
+  } else if (thisday.getDay() == 6) {
+    return 'с 11:00 до 15:00';
+  } else if (thisday.getDay() == 0) {
+    return 'выходной';
+  }
+}
+
 // components can be called from the imported UIkit reference
 // UIkit.notification('Hello world.');
 
