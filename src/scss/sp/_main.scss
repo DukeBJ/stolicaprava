@@ -288,6 +288,13 @@ footer {
 
   &-card {
     margin-left: 50px;
+    transition: all .3s ease;
+    display: block;
+    text-decoration: none!important;
+
+    &:hover {
+      box-shadow: 0 14px 25px rgb(0 0 0 / 16%);
+    }
   }
   
   .uk-card-body {
