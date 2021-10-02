@@ -18,7 +18,7 @@ defined('_JEXEC') or die;?>
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/app.css" />
+  <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/app.css?234tf3" />
 
   <!-- Put this script tag to the <head> of your page | не понятно работает ли это еще
   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?82"></script>
@@ -34,19 +34,13 @@ defined('_JEXEC') or die;?>
 
 <body>
 
-    <!-- возможно, это крошки -->
-    <!--jdoc:include type="modules" name="position-2" /-->
-
-    <!-- Основной контент -->
-    <!--jdoc:include type="component" /-->
-
     <div class="wrapper">
 
     <header class="sp-header">
       <div class="uk-container">
         <div class="uk-flex uk-flex-middle uk-visible@m sp-header-desktop">
           <div class="uk-width-auto sp-top-logo">
-            <img src="/img/logo.svg" alt="">
+            <a href="/"><img src="/img/logo.svg" alt=""></a>
           </div>
           <div class="uk-width-expand sp-top-nav">
             <nav class="uk-navbar-container" uk-navbar>
@@ -59,7 +53,8 @@ defined('_JEXEC') or die;?>
                 </ul>
               </div>
 
-              <div class="nav-overlay">
+              <!-- это для будущего поиска -->
+              <!--<div class="nav-overlay">
 
                 <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
         
@@ -75,26 +70,26 @@ defined('_JEXEC') or die;?>
         
                 <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
         
-              </div>
+              </div> -->
 
             </nav>
           </div>
           <div class="uk-width-auto sp-top-contact">
-            <nobr><a href="#">8 (495) 510‑70‑16</a></nobr>
+            <nobr><a href="tel:+74955107016">8 (495) 510‑70‑16</a></nobr>
             <div class="uk-text-small sp-top-time">c 10:00 до 19:00</div>
           </div>
         </div>
 
         <div class="uk-flex uk-flex-middle uk-hidden@m sp-header-mobile">
           <div class="uk-width-auto sp-top-logo">
-            <img src="/img/logo_small.svg" alt="">
+            <a href="/"><img src="/img/logo_small.svg" alt=""></a>
           </div>
           <div class="uk-width-expand sp-top-contact">
-            <nobr><a href="#">8 (495) 510‑70‑16</a></nobr>
+            <nobr><a href="#callbackwidget">8 (495) 510‑70‑16</a></nobr>
             <div class="uk-text-small">Юридическая консультация</div>
           </div>
           <div class="uk-width-auto sp-top-nav">
-            <div uk-icon="menu" uk-toggle="target: #offcanvas-overlay"></div>
+            <div id="menu-open" uk-icon="menu"></div>
           </div>
         </div>
       </div>
@@ -105,7 +100,7 @@ defined('_JEXEC') or die;?>
 
           <div class="uk-flex uk-margin uk-flex-between">
             <div class="uk-width-auto sp-top-logo">
-              <img src="/img/logo.svg" alt="">
+              <a href="/"><img src="/img/logo.svg" alt=""></a>
             </div>
             <div class="uk-width-auto">
               <button class="uk-offcanvas-close" type="button" uk-close></button>
@@ -122,7 +117,7 @@ defined('_JEXEC') or die;?>
 
           <div class="uk-flex uk-margin uk-flex-column uk-text-center">
             <div class="sp-connect">
-              <nobr><a href="/contact/">8 (495) 510‑70‑16</a></nobr>
+              <nobr><a href="tel:+74955107016">8 (495) 510‑70‑16</a></nobr>
             </div>
             <div class="sp-connect">
               <div class="uk-text-small">WhatsApp</div>
@@ -135,30 +130,48 @@ defined('_JEXEC') or die;?>
             <div class="sp-top-time">c 10:00 до 19:00</div>
           </div>
           <div class="uk-flex uk-margin uk-text-center">
-            <a href="#" class="uk-button">Бесплатная консультация</a>
+            <a href="#callbackwidget" class="uk-button">Бесплатная консультация</a>
           </div>
 
       </div>
     </div>
 
     <main>
+
+    <?php if($_SERVER['REQUEST_URI'] != '/') : ?>
+
+      <div class="uk-container">
+
+        <div class="sp-breadcrumbs">
+
+              <!-- возможно, это крошки -->
+          <jdoc:include type="modules" name="position-2" />
+              
+        </div>
+
+        <!-- Основной контент -->
+        <jdoc:include type="component" />
+
+      </div>
+
+    <?php else : ?>
+
       <!--TODO: сделать может чуть-чуть анимации -->
       <section class="sp-banner">
         <div class="uk-container">
           <div class="uk-grid uk-text-center uk-text-left@m uk-text-left@m uk-flex uk-flex-middle uk-child-width-1-2@m uk-child-width-1@s" uk-grid>
             <div class="uk-width-1 sp-breadcrumbs">
-              <ul class="uk-breadcrumb uk-margin-bottom">
-                <li><a href="#">Главнаая</a></li>
-                <li><a href="#">Следущая</a></li>
-                <li>Текущая страница</li>
-              </ul>
+
+              <!-- возможно, это крошки -->
+              <jdoc:include type="modules" name="position-2" />
+              
             </div>
             <div class="sp-left uk-flex-first@m">
               <h1 class="sp-banner--header">
-                Профессиональная оконная помощь
+                Профессиональная юридическая помощь
               </h1>
-              <div class="sp-banner--description">Компания «Пластика Оконн» — защищаем ваши окна уже 10 лет</div>
-              <a href="#" class="uk-button">Бесплатная консультация</a>
+              <div class="sp-banner--description">Юридический центр &laquo;Столица&raquo;&nbsp;&mdash; защищаем ваши интересы уже 10&nbsp;лет</div>
+              <a href="#callbackwidget" class="uk-button">Бесплатная консультация</a>
             </div>
             <div class="sp-right uk-flex-first">
               <img src="/img/law.png" alt="">
@@ -177,11 +190,11 @@ defined('_JEXEC') or die;?>
               </div>
             </div>
             <div>
-              <div class="uk-card uk-margin-medium-top uk-card-default sp-services-card">
+              <a href="/service/zhil-serv.html" class="uk-card uk-margin-medium-top uk-card-default sp-services-card">
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="/img/icon-group.svg#home"></use>
+                      <use xlink:href="./img/icon-group.svg#home"></use>
                     </svg>
                   </div>
                   <div>
@@ -190,14 +203,14 @@ defined('_JEXEC') or die;?>
                     <p class="description">Не&nbsp;бойтесь остаться без своего угла. Наш юрист по&nbsp;жилищным вопросам защитит ваше право на&nbsp;недвижимость</p>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div>
-              <div class="uk-card uk-card-default sp-services-card">
+              <a href="/service/sem.html" class="uk-card uk-card-default sp-services-card">
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="/img/icon-group.svg#heart"></use>
+                      <use xlink:href="./img/icon-group.svg#heart"></use>
                     </svg>
                   </div>
                   <div>
@@ -206,14 +219,14 @@ defined('_JEXEC') or die;?>
                     <p class="description">Брачные проблемы&nbsp;&mdash; не&nbsp;проблемы, когда наш юрист по&nbsp;семейным вопросам берется за&nbsp;дело</p>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div>
-              <div class="uk-card uk-card-default sp-services-card">
+              <a href="/service/zpp.html" class="uk-card uk-card-default sp-services-card">
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="/img/icon-group.svg#trust"></use>
+                      <use xlink:href="./img/icon-group.svg#trust"></use>
                     </svg>
                   </div>
                   <div>
@@ -222,14 +235,14 @@ defined('_JEXEC') or die;?>
                     <p class="description">Обманули в&nbsp;магазине&nbsp;&mdash; не&nbsp;беда. наш юрист по&nbsp;защите прав потребителя поможет взыскать компенсацию</p>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div>
-              <div class="uk-card uk-card-default sp-services-card">
+              <a href="/service/yurist-po-nasledstvennym-sporam.html" class="uk-card uk-card-default sp-services-card">
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="/img/icon-group.svg#contract"></use>
+                      <use xlink:href="./img/icon-group.svg#contract"></use>
                     </svg>
                   </div>
                   <div>
@@ -238,14 +251,14 @@ defined('_JEXEC') or die;?>
                     <p class="description">Жаркие споры за&nbsp;наследство? Наш юрист по&nbsp;наследственным делам добавит холодных доказательст подтверждающих ваши права</p>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div>
-              <div class="uk-card uk-card-default sp-services-card">
+              <a href="/service/trud.html" class="uk-card uk-card-default sp-services-card">
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="/img/icon-group.svg#family"></use>
+                      <use xlink:href="./img/icon-group.svg#family"></use>
                     </svg>
                   </div>
                   <div>
@@ -254,14 +267,14 @@ defined('_JEXEC') or die;?>
                     <p class="description">Уволили без компенсации? Наш юрист по&nbsp;трудовым спорам поможет восстановиться на&nbsp;работе или получить компенсацию</p>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div>
-              <div class="uk-card uk-card-default sp-services-card">
+              <a href="/service/yurist-po-zemelnym-voprosam.html" class="uk-card uk-card-default sp-services-card">
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="/img/icon-group.svg#wheight"></use>
+                      <use xlink:href="./img/icon-group.svg#wheight"></use>
                     </svg>
                   </div>
                   <div>
@@ -270,14 +283,14 @@ defined('_JEXEC') or die;?>
                     <p class="description">Лишили последнего клочка земли&nbsp;&mdash; наш юрист по&nbsp;земельным вопросам разберется и&nbsp;поможет вернуть ваши сотки</p>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div>
-              <div class="uk-card uk-card-default sp-services-card">
+              <a href="/service/autourist.html" class="uk-card uk-card-default sp-services-card">
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="/img/icon-group.svg#car"></use>
+                      <use xlink:href="./img/icon-group.svg#car"></use>
                     </svg>
                   </div>
                   <div>
@@ -286,14 +299,14 @@ defined('_JEXEC') or die;?>
                     <p class="description">Произошла авария не&nbsp;по&nbsp;вашей вине&nbsp;&mdash; мы&nbsp;докажем вашу невиновность в&nbsp;суде</p>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div>
-              <div class="uk-card uk-card-default sp-services-card">
+              <a href="/service/pen.html" class="uk-card uk-card-default sp-services-card">
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="/img/icon-group.svg#oldman"></use>
+                      <use xlink:href="./img/icon-group.svg#oldman"></use>
                     </svg>
                   </div>
                   <div>
@@ -302,14 +315,14 @@ defined('_JEXEC') or die;?>
                     <p class="description">Когда возникает проблема с&nbsp;получением пенсии, наш юрист по&nbsp;пенсионному праву поможет получить ваше по&nbsp;праву</p>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div>
-              <div class="uk-card uk-card-default sp-services-card">
+              <a href="/service/audit.html" class="uk-card uk-card-default sp-services-card">
                 <div class="uk-card-body">
                   <div class="sp-services-icon">
                     <svg class="icon">
-                      <use xlink:href="/img/icon-group.svg#document"></use>
+                      <use xlink:href="./img/icon-group.svg#document"></use>
                     </svg>
                   </div>
                   <div>
@@ -318,7 +331,7 @@ defined('_JEXEC') or die;?>
                     <p class="description">Наши юристы помогут вашей организации с&nbsp;аудитом бухгалтерских документов</p>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             
           </div>
@@ -391,7 +404,7 @@ defined('_JEXEC') or die;?>
 
           <div class="uk-flex uk-flex-center">
             <div>
-              <a href="#" class="uk-button">Бесплатная консультация</a>
+              <a href="#callbackwidget" class="uk-button">Бесплатная консультация</a>
             </div>
           </div>
 
@@ -596,7 +609,7 @@ defined('_JEXEC') or die;?>
 
             <div class="sp-contacts-card">
               <div class="sp-contacts-card-title">Номер телефона</div>
-              <div class="sp-contacts-card-text"><a href="#">8 (495)510‑70‑16</a></div>
+              <div class="sp-contacts-card-text"><a href="tel:+74955107016">8 (495)510‑70‑16</a></div>
               <hr>
               <div class="sp-contacts-card-title">WhatsApp</div>
               <div class="sp-contacts-card-text"><a href="https://wa.me/79255195133">8 (925) 519‑51‑33</a></div>
@@ -615,6 +628,8 @@ defined('_JEXEC') or die;?>
             
         </div>
       </section>
+
+      <?php endif; ?>
 
     </main>
 
@@ -638,7 +653,7 @@ defined('_JEXEC') or die;?>
           </div>
 
           <div class="uk-margin">
-            <div class="footer-header"><a href="">Контакты</a></div>
+            <div class="footer-header"><a href="/contact/">Контакты</a></div>
             <div class="footer-link"><a href="mailto:info@stolicaprava.ru">info@stolicaprava.ru</a></div>
             <div class="footer-link"><a href="tel:+74955107016">8 (495) 510‑70‑16</a></div>
             <div class="footer-link">
@@ -663,6 +678,9 @@ defined('_JEXEC') or die;?>
 
     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/app.js"></script>
 
+    <link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
+    <script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=5176da8bdccbf02a65f11cb2ab0095a0" charset="UTF-8" async></script>
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -673,7 +691,19 @@ defined('_JEXEC') or die;?>
     </script>
 
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter17516107 = new Ya.Metrika({id:17516107, enableAll: true, webvisor:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/17516107" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(17516107, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+      });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/17516107" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
     <jdoc:include type="modules" name="debug" />
