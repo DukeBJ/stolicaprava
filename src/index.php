@@ -109,7 +109,7 @@ defined('_JEXEC') or die;?>
 
 
           <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-            <li><a href="/service/service.html">Услуги</a></li>
+            <li><a href="/service/">Услуги</a></li>
             <li><a href="/dokumenty/">Документы</a></li>
             <li><a href="/articles/">Статьи</a></li>
             <li><a href="/contact/">Контакты</a></li>
